@@ -5,7 +5,7 @@
 	color: white !important;
 }
 .background-img-primary{
-	background-image: url('../img/matthew-henry-134263-unsplash.jpg');
+	background-image: url('../img/fondo1.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -15,4 +15,34 @@
 }
 .text-img{
 	font-size: 25px;
+}
+.boton-scroll{
+	height: 55px;
+    border-radius: 12px;
+    background: rgba(247, 240, 240, 0.8);
+}
+.container-text-left{
+	width: 70%;
+}
+.background-img-horizontal{
+	background-color: rgba(208, 208, 208, 0.3);	
+    padding: 65px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-content-horizontal{
+	width: 80%
+}
+.margin-top-container-center{
+	margin-top: 2em;
+}
+.container-text-center{
+	width: 80%;
+}
+.img-content-vertical{
+	height: 655px;
+}
+#content2{
+	background-color: rgba(204, 204, 204, 0.5);
 }
