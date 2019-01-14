@@ -1,0 +1,18 @@
+.nav-color{
+	background-color: #0b3148;
+}
+.text-white{
+	color: white !important;
+}
+.background-img-primary{
+	background-image: url('../img/matthew-henry-134263-unsplash.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.title-img{
+	color: white !important;
+	font-size: 65px;
+}
+.text-img{
+	font-size: 25px;
+}

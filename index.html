@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Index</title>
+	<link rel="stylesheet" href="others/bootstrap.min.css">
+	<script src="others/jQuery.min.js"></script>
+	<script src="others/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="others/animations.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body style="margin: 0">
+	<section>
+		
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded nav-color">
+			<div class="col-md-6">
+				<a class="navbar-brand text-white" href="#">Hidden brand</a>
+			</div>
+			<div class="col-md-6">
+				<ul class="navbar-nav flex-row justify-content-end">
+					<li class="nav-item active ml-3">
+						<a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item ml-3">
+						<a class="nav-link text-white" href="#">Link</a>
+					</li>
+					<li class="nav-item ml-3">
+						<a class="nav-link disabled text-white" href="#">Disabled</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="background-img-primary d-flex align-items-center" id="alvent">
+			<div class="col-md-12">
+				<div>
+					<h1 class="text-center title-img">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit, sed do eiusmod</h1>
+					<p class="text-center text-white mt-4 text-img">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+						<br>incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation 
+						<br>ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+				<div class="d-flex justify-content-center align-content-end">
+					<button class="btn btn-light" id="pruebaScrollBoton">Prueba</button>
+				</div>
+			</div>
+			<div class="">
+				
+			</div>
+		</div>
+		<div class="container mt-5 content-container d-flex align-content-center">
+			<div class="row align-content-center" id="pruebaScroll">
+				<div class="col-md-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="" alt="alguna imagen">
+				</div>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			<!-- Función para obtener el Alto(Height) --> 
+			function obtenerAlto( obj, alto, ancho ) {
+			  $( "#alvent" ).height(alto - 56);
+			  $( ".content-container" ).height(alto);
+			}
+			obtenerAlto( "ventana", $( window ).height(), $( window ).width() );
+			$(window).resize(function(){
+			    obtenerAlto( "ventana", $( window ).height(), $( window ).width() );
+			});
+            $('#pruebaScrollBoton').bind("click", function () {
+                var dest = $("#pruebaScroll").offset().top;
+                $("html, body").animate({scrollTop: dest},600);
+            });
+		});
+
+		$(window).scroll(function() {
+			$('.phone').each(function(){
+				let imagePos = $(this).offset().top;
+				
+				let topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+400) { //entre mas bajo el numero mas lento la carga (mas largo el scroll)
+						$(this).addClass("slideRight");
+					}
+			});
+			$('#pop-up-message').each(function(){
+				let imagePos = $(this).offset().top;
+				
+				let topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+400) {
+						$('.pruebaMove').addClass("slideExpandUp");
+					}
+				});	
+		});
+	</script>
+</body>
+</html>
