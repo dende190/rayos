@@ -1,4 +1,4 @@
-.nav-color{
+.nav-color, .background-products{
 	background-color: #0b3148;
 }
 .text-white{
@@ -41,8 +41,25 @@
 	width: 80%;
 }
 .img-content-vertical{
-	height: 655px;
+	width: 55%;
+	height: 100%;
 }
 #content2{
 	background-color: rgba(204, 204, 204, 0.5);
+}
+.divs-products{
+	background-color: white;
+	height: 34em;
+	border-radius: 10px;
+}
+.container-icons{
+	font-size: 90px;
+	display: flex;
+    justify-content: center;
+}
+
+
+/*EFECTOS ANIMATIONS*/
+#img1, #img2, #text1, #div1, #div2, #div3{
+	visibility: hidden;
 }
