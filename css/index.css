@@ -1,4 +1,4 @@
-.nav-color, .background-products{
+.nav-color{
 	background-color: #0b3148;
 }
 .text-white{
@@ -25,7 +25,7 @@
 	width: 70%;
 }
 .background-img-horizontal{
-	background-color: rgba(208, 208, 208, 0.3);	
+	background-color: rgba(208, 208, 208, 0.17);	
     padding: 65px 0px;
     display: flex;
     justify-content: center;
@@ -41,15 +41,15 @@
 	width: 80%;
 }
 .img-content-vertical{
-	width: 55%;
+	width: 40%;
 	height: 100%;
 }
 #content2{
-	background-color: rgba(204, 204, 204, 0.5);
+	background-color: rgba(204, 204, 204, 0.27);
 }
 .divs-products{
 	background-color: white;
-	height: 34em;
+	padding-bottom: 2em;
 	border-radius: 10px;
 }
 .container-icons{
@@ -60,6 +60,9 @@
 
 
 /*EFECTOS ANIMATIONS*/
-#img1, #img2, #text1, #div1, #div2, #div3{
+#img1, #img2, #text1, #div1, #div2, .div3{
 	visibility: hidden;
+}
+.background-products{
+	background-color: rgba(11,19,72,1);
 }
