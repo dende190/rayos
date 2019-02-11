@@ -1,3 +1,6 @@
+body{
+	font: 400 12px/1.8 "Open Sans", sans-serif;
+}
 .nav-color{
 	background-color: #0b3148;
 }
@@ -9,6 +12,12 @@
 	background-size: cover;
 	background-position: center;
 }
+.background-img-productos{
+	background-image: url('../img/fondo1.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+}
 .title-img{
 	color: white !important;
 	font-size: 65px;
@@ -17,22 +26,19 @@
 	font-size: 25px;
 }
 .boton-scroll{
-	height: 55px;
-    border-radius: 12px;
+    border-radius: 20px;
     background: rgba(247, 240, 240, 0.8);
 }
 .container-text-left{
 	width: 70%;
 }
 .background-img-horizontal{
-	background-color: rgba(208, 208, 208, 0.17);	
-    padding: 65px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .img-content-horizontal{
-	width: 80%
+	width: 100%
 }
 .margin-top-container-center{
 	margin-top: 2em;
@@ -57,12 +63,105 @@
 	display: flex;
     justify-content: center;
 }
+hr{
+	margin: 0;
+}
+footer{
+	background-color: #111;
+	color: white;
+	font-family: "Roboto Condensed", sans-serif;
+}
 
 
 /*EFECTOS ANIMATIONS*/
 #img1, #img2, #text1, #div1, #div2, .div3{
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 .background-products{
 	background-color: rgba(11,19,72,1);
+}
+
+
+/*prueba 2*/
+#dataIconos{
+	padding: 100px 0;
+}
+.iconos{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.title-iconos{
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.title-footer{
+	border-bottom: 1px dotted #c2c2c2;
+	letter-spacing: 2px;
+	font-size: 14px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+.container-footer{
+	padding: 75px 0 60px; 
+}
+#listaProductos{
+	font-family: inherit;
+}
+
+.container-ul{
+	display: flex;
+	justify-content: center;
+}
+.slider{
+	width: 540px;
+	height: 400px;
+}
+.sliders{
+	list-style: none;
+}
+.container-slider{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flecha-left, .flecha-right{
+	font-size: 50px;
+	color: black;
+}
+.flecha-left{
+	margin-right: 16px;
+}
+.flecha-right{
+	margin-left: 16px;
+}
+#listaProductos{
+	padding: 10px 0;
+	background-color: rgba(181, 181, 181, 0.3);
+
+}
+.content-lista-productos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card-productos{
+	width: 98%;
+}
+.containerSliderImagenes{
+	width: 80%
+}
+#socios{
+	padding: 100px 0;
+}
+.container-img-socios{
+	margin-right: 10px;
+	border: 1px solid black;
+}
+.imgSocios{
+    width: 153px;
+    height: 189px;
+}
+#formulario{
+	padding: 100px 0;
 }
