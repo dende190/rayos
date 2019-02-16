@@ -124,6 +124,7 @@ footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 65%;
 }
 .flecha-left, .flecha-right{
 	font-size: 50px;
@@ -164,4 +165,18 @@ footer{
 }
 #formulario{
 	padding: 100px 0;
+}
+.dise1{
+	width: 100%;
+}
+.dise2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	opacity: 0;
+	transition: .4s;
+}
+.dise2:hover{
+	opacity: 1
 }
