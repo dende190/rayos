@@ -13,12 +13,13 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cabin|Source+Sans+Pro" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
 	<section id="primary-content">
-		<nav class="navbar navbar-toggleable-md navbar-light bg-faded nav-color">
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded nav-color" id="navbar">
 			<div class="col-md-6">
-				<a class="navbar-brand text-white" href="#"></a>
+				<a class="navbar-brand text-white" href="index.html">DAAR PROTECCION</a>
 			</div>
 			<div class="col-md-6">
 				<ul class="navbar-nav flex-row justify-content-end">
@@ -37,6 +38,27 @@
 				</ul>
 			</div>
 		</nav>
+		<button id="navBurger"><i class="fas fa-bars"></i></button>
+		<div id="navToggle">
+			<div class="containerTitleNavToggle">
+				<a class="navbar-brand text-white text-center" href="index.html">DAAR PROTECCION</a>
+				<button id="closeNavToggle">X</button>
+			</div>
+			<ul class="itemsNavToggle">
+				<li>
+					<a class="nav-link text-white" href="index.html" style="font-size: 15px;">INICIO</a>
+				</li>
+				<li>
+					<a class="nav-link text-white" href="productos.html" style="font-size: 15px;">PRODUCTOS</a>
+				</li>
+				<li>
+					<a class="nav-link text-white" href="pruebas.html" style="font-size: 15px;">PRUEBAS</a>
+				</li>
+				<li>
+					<a class="nav-link text-white" href="contactenos.html" style="font-size: 15px;">CONTACTENOS</a>
+				</li>
+			</ul>
+		</div>
 		<div class="background-img-pruebas d-flex align-items-center">
 			<div class="col-md-12">
 				<div>
@@ -47,28 +69,139 @@
 		</div>
 	</section>
 	<section id="pruebasRealizadas">
-		<h2 class="text-center m-5">Las pruebas que se han realizado: </h2>
-		<div class="text-center mb-5">
+		<div class="text-center mb-5 mt-5">
+			<iframe width="40%" height="375px" class="mr-4" src="https://www.youtube.com/embed/YFE3TMnxzuY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<!-- <div class="text-center mb-5">
 			<iframe width="40%" height="375px" class="mr-4" src="https://www.youtube.com/embed/YFE3TMnxzuY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			<iframe width="40%" height="375px" src="https://www.youtube.com/embed/YFE3TMnxzuY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div> -->
+	</section>
+	<section>
+		<h2 class="text-center m-5">Lugares que ya tiene proteccion del 100% contra Rayos y Cortos circuitos<br><small>Para mas informacion toca la imagen</small></h2>
+		<div class="containerPlaces">
+			<div class="containerAllPlaces">
+				<div class="text-center">
+					<img src="img/equipo_tabio.jpeg" alt="Equipo Tabio">
+				</div>
+				<div class="containerDataPlace">
+					<table>
+						<tr>
+							<th><strong>Pais:</strong></th>
+							<td>Colombia</td>
+						</tr>
+						<tr>
+							<th><strong>Municipio:</strong></th>
+							<td>Tabio - Cundinamarca</td>
+						</tr>
+						<tr>
+							<th><strong>Equipo:</strong></th>
+							<td>Protección contra rayos eléctricos</td>
+						</tr>
+						<tr>
+							<th><strong>Descripcion:</strong></th>
+						</tr>
+					</table>
+					<div class="containerDataPlaceP">
+						<p>Radio de Protección de doscientos (200) metros y 100% de efectividad</p>
+					</div>
+				</div>
+			</div>
+			<div class="containerAllPlaces">
+				<div class="text-center">
+					<img src="img/equipo_soacha_radio_maria.jpeg" alt="Equipo Soacha Radio Maria">
+				</div>
+				<div class="containerDataPlace">
+					<table>
+						<tr>
+							<th><strong>Pais:</strong></th>
+							<td>Colombia</td>
+						</tr>
+						<tr>
+							<th><strong>Municipio:</strong></th>
+							<td>Soacha - Cundinamarca</td>
+						</tr>
+						<tr>
+							<th><strong>Equipo:</strong></th>
+							<td>Protección contra rayos eléctricos</td>
+						</tr>
+						<tr>
+							<th><strong>Descripcion:</strong></th>
+						</tr>
+					</table>
+					<div class="containerDataPlaceP">
+						<p>Equipo puesto en cercania a la antena en la emisora de radio "Radio Maria" ubicada en Soacha</p>
+					</div>
+				</div>
+			</div>
+			<div class="containerAllPlaces">
+				<div class="text-center">
+					<img src="img/equipo_soacha.jpeg" alt="Equipo Soacha Radio Maria">
+				</div>
+				<div class="containerDataPlace">
+					<table>
+						<tr>
+							<th><strong>Pais:</strong></th>
+							<td>Colombia</td>
+						</tr>
+						<tr>
+							<th><strong>Municipio:</strong></th>
+							<td>Soacha - Cundinamarca</td>
+						</tr>
+						<tr>
+							<th><strong>Equipo:</strong></th>
+							<td>Protección contra corto circuito</td>
+						</tr>
+						<tr>
+							<th><strong>Descripcion:</strong></th>
+						</tr>
+						
+					</table>
+					<div class="containerDataPlaceP">
+						<p>Equipo puesto en cercania a la antena en la emisora de radio "Radio Maria" ubicada en Soacha</p>
+					</div>
+				</div>
+			</div>
+			<div class="containerAllPlaces">
+				<div class="text-center">
+					<img src="img/equipo_radio_maria.jpeg" alt="Equipo Soacha Radio Maria">
+				</div>
+				<div class="containerDataPlace">
+					<table>
+						<tr>
+							<th><strong>Pais:</strong></th>
+							<td>Colombia</td>
+						</tr>
+						<tr>
+							<th><strong>Ciudad:</strong></th>
+							<td>Bogota D.C. </td>
+						</tr>
+						<tr>
+							<th><strong>Equipo:</strong></th>
+							<td>Protección contra rayos eléctricos</td>
+						</tr>
+						<tr>
+							<th><strong>Descripcion:</strong></th>
+						</tr>
+					</table>
+					<div class="containerDataPlaceP">
+						<p>Equipo puesto en emisora de radio "Radio Maria" ubicada en Bogota que ahora posee 100% de proteccion contra rayos </p>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="text-center mb-5">
-			<iframe width="40%" height="375px" class="mr-4" src="https://www.youtube.com/embed/YFE3TMnxzuY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<iframe width="40%" height="375px" src="https://www.youtube.com/embed/YFE3TMnxzuY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-		<div class="booklet" id="mybook">
+	</section>
+	<section>
+		<h1 class="text-center mb-5 titleLift">Sustentaciones de nuestros productos</h1>
+		<div class="booklet container" id="mybook">
 		    <div title="Prueba realizada en laboratorio de la universidad nacional">
-		        <img src="img/unalPortada.jpg">
+		        <img class="img-content-book" src="img/unalPortada.jpg">
 		    </div>
-		    <div>
-				<img class="img-content-book" src="img/unal1.jpg">
-			</div>
-		    <div>
-				<img class="img-content-book" src="img/unal2.jpg">
-			</div>
-			<div>
-				<img class="img-content-book" src="img/unal3.jpg">
-			</div>
+		    <div style="width: 100%; height: 100%">
+		    	<div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center">
+		    		<p>Pruebas realizadas en la Universidad Nacional de Colombia</p>
+		    	</div>
+		    </div>
 			<div>
 				<img class="img-content-book" src="img/unal4.jpg">
 			</div>
@@ -92,58 +225,51 @@
 			<div class="container-slider">
 				<a href='#next' class='slider-prev flecha-left'><i class="fa fa-chevron-left"></i></a>
 				<ul id="slider">
-					<li>
-						<img src="img/m1.png" class="img-content-horizontal" alt="alguna imagen">
+					<li style="width: 100%; height: 100%">
+						<div class="text-center d-flex justify-content-center align-items-center" style="width: 100%; height: 100%">
+							<h1 class="textLift">Sustentacion matemática de laboratorio de alta tension <br>23 de agosto 2018</h1>
+						</div>
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m2.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m3.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m4.jpg" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m5.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m6.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m7.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m8.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m9.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
-						<img src="img/m10.png" class="img-content-horizontal" alt="alguna imagen">
-					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m11.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m12.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m13.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
-						<img src="img/m14.png" class="img-content-horizontal" alt="alguna imagen">
-					</li>
-					<li>
-						<img src="img/m15.png" class="img-content-horizontal" alt="alguna imagen">
-					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m17.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m18.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
-					<li>
+					<li style="width: 100%; height: 100%">
 						<img src="img/m19.png" class="img-content-horizontal" alt="alguna imagen">
 					</li>
 				</ul>
@@ -151,35 +277,27 @@
 			</div>
 		</div>
 	</section>
+	
 	<footer>
 		<div class="container">
-			<div class="row">
-				<div class="d-flex container-footer">
-					<div class="col-md-4">
-						<h5 class="title-footer">NOSTROS</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="col-md-4">
-						<h5 class="title-footer">MISION</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="col-md-4">
-						<h5 class="title-footer">ALGO</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
+			<div class="row pt-5">
+				<div class="col-md-4 col-sm-12 dataFooter">
+					<h5 class="title-footer">NOSOTROS</h5>
+					<p>Somos ingenieros electricistas especializados en proteccion contra rayos electricos y corto circuitos y generacion electrica limpia</p>
+				</div>
+				<div class="col-md-4 col-sm-12 dataFooter">
+					<h5 class="title-footer">MISION</h5>
+					<p>Proteccion al 100% para seres humanos y equipos con un procedimiento completamente nuevo a nivel mundial</p>
+				</div>
+				<div class="col-md-4 col-sm-12 dataFooter">
+					<h5 class="title-footer">VISION</h5>
+					<p>Ser la mejor empresa de alta tension del mundo</p>
 				</div>
 			</div>
 		</div>
 		<hr style="background-color: #353535">
 		<div class="container d-flex justify-content-md-between mt-4">
 			<p><strong>© 2019 ALL RIGHTS RESERVED</strong></p>	
-			<p><strong>redes....</strong></p>	
 		</div>
 	</footer>
 	<script src="js/src/jquery-2.1.0.min.js"></script>
@@ -213,10 +331,10 @@
 
 			for (var i=0;i<slider.number;i++){
 				var sl = $(slider.slides[i]);
-				sl.attr('class',sl.attr('class') + " slider-slide-"+i);
+				sl.attr('class', sl.attr('class') + " slider-slide-"+i);
 				sl.css({
 					position : 'absolute',
-					left : slider.width * i	
+					left : slider.width * i, 
 				});
 			}
 
@@ -232,8 +350,9 @@
 				for (var i=0;i<slider.number;i++){
 					var sl = $(slider.slides[i]);
 					sl.animate({
-						left : slider.width * (i - slider.actual)
+						left : slider.width * (i - slider.actual),
 					},2000);
+					
 				}
 			};
 
@@ -253,14 +372,55 @@
 	</script>
 	<script>
 		$(function() {
+			var $w
+			var $h
+			var $t = 300
+			
+			if($( window ).width() >= 1400){
+				$w = 1200
+				$h = 800
+			}else if($( window ).width() >= 1024){
+				$w = 900
+				$h = 600
+			}else if($( window ).width() >= 768){
+				$w = 700
+				$h = 500
+			}else if($( window ).width() >= 340){
+				$w = 330
+				$h = 200
+				$t = 150
+			}
+
 		    $('#mybook').booklet({
 		    	tabs: true,
 		    	closed: true,
-				width: 1700,
-				height: 900,
+		    	width: $w,
+		    	height: $h,
 		        menu: '#custom-menu',
-		        pageSelector: true
+		        pageSelector: true,
+		        tabWidth: $t,
 		    });
+		});
+	</script>
+	<script>
+		$(function() {
+			var hidden = true
+			$('#navBurger').click( () => {
+				if(!hidden){
+					$('#navToggle').css('left', '-1000px')
+					$('#navBurger').css('left', '20px')
+					hidden = !hidden
+				}else{
+					$('#navToggle').css('left', '0')
+					$('#navBurger').css('left', '320px')
+					hidden = !hidden
+				}
+			})
+			$('#closeNavToggle').click( () => {
+				$('#navToggle').css('left', '-1000px')
+				$('#navBurger').css('left', '20px')
+				hidden = !hidden
+			})
 		});
 	</script>
 </body>

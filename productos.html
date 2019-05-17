@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Productos</title>
+	<title>Nuestros Productos</title>
 	<link rel="stylesheet" href="others/bootstrap.min.css">
 	<script src="others/jQuery.min.js"></script>
 	<script src="others/bootstrap.min.js"></script>
@@ -12,12 +12,13 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cabin|Source+Sans+Pro" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
 	<section id="primary-content">
-		<nav class="navbar navbar-toggleable-md navbar-light bg-faded nav-color">
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded nav-color" id="navbar">
 			<div class="col-md-6">
-				<a class="navbar-brand text-white" href="#"></a>
+				<a class="navbar-brand text-white" href="index.html">DAAR PROTECCION</a>
 			</div>
 			<div class="col-md-6">
 				<ul class="navbar-nav flex-row justify-content-end">
@@ -36,6 +37,27 @@
 				</ul>
 			</div>
 		</nav>
+		<button id="navBurger"><i class="fas fa-bars"></i></button>
+		<div id="navToggle">
+			<div class="containerTitleNavToggle">
+				<a class="navbar-brand text-white text-center" href="index.html">DAAR PROTECCION</a>
+				<button id="closeNavToggle">X</button>
+			</div>
+			<ul class="itemsNavToggle">
+				<li>
+					<a class="nav-link text-white" href="index.html" style="font-size: 15px;">INICIO</a>
+				</li>
+				<li>
+					<a class="nav-link text-white" href="productos.html" style="font-size: 15px;">PRODUCTOS</a>
+				</li>
+				<li>
+					<a class="nav-link text-white" href="pruebas.html" style="font-size: 15px;">PRUEBAS</a>
+				</li>
+				<li>
+					<a class="nav-link text-white" href="contactenos.html" style="font-size: 15px;">CONTACTENOS</a>
+				</li>
+			</ul>
+		</div>
 		<div class="background-img-productos d-flex align-items-center">
 			<div class="col-md-12">
 				<div>
@@ -50,28 +72,32 @@
 			<div class="card card-productos">
 				<div class="card-body">
 		            <div class="row">
-		                <div class="col-md-5 text-center">
-		                	<img src="img/equipo1.jpg" class="img-content-products" alt="">
+		                <div class="col-md-5 text-center contentImageProductCenter">
+		                	<img src="img/equipo1.jpg" class="img-content-products" id="equipo1" alt="">
 		                </div>
 		                <div class="col-md-7">
-		                    <h2 class="font-bold m-b-xs">
+		                    <h2 class="font-bold m-b-xs text-center">
 		                        Protección contra corto circuito
 		                    </h2>
-		                    <hr>
+		                    <hr class="hrProduct">
 		                    <div>
 		                    	<h1 class="product-main-price">Precio por diseño</h1>
 		                    	<h5 class="text-muted">ese precio se da dependiendo del diseño de la zona que se desee proteger</h5> 
 		                    </div>
-		                    <hr>
+		                    <hr class="hrProduct">
 		                    <h4 class="mt-4">Descripcion</h4>
 		                    <div class="container">
 		                    	<p>
-				                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		                    		procedimiento para alta tension:<br>
+									La bobina en corto circuito flotante debe estar en un solo punto soldada con cables electricos que soporten 12.000 Amperios pico en 9 segundos y la distancia de separacion de tierra se debe realizar de acuerdo al diseño que se requiera <br>
+
+
+		                    		procedimiento para media tension:<br>
+		                    		Colocar una bobina en corto circuito flotante que este unida en un solo punto con un cable que vaya a la carcasa del transformador de media tension y otro cable que vaya al neutro del secundario del transformador de distribucion; La bobina en corto circuito flotante debe estar separada de tierra la distancia de seguridad que se requiera.<br>
+
+
+		                    		procedimiento para baja tension:<br>
+				                    La proteccion contra corto circuito entre fase y tierra de aqui en adelante se realizara por medio de una bobina en corto circuito flotante que cumple con la norma 2206 de ICONTEC que dice que un solo punto de bobina en corto circuito debe ir al borne del nuetro del tablero de acometida y al borne de tierra de ese mismo tablero; La bobina en corto circuito flotante debe estar separada de tierra la distancia de seguridad de 20cm.<br>
 		                    	</p>
 		                    </div>
 		                    <div class="text-right mt-5">
@@ -87,28 +113,24 @@
 			<div class="card card-productos">
 				<div class="card-body">
 		            <div class="row">
-		                <div class="col-md-5 text-center">
+		                <div class="col-md-5 text-center contentImageProductCenter">
 		                	<img src="img/equipo2.jpg" class="img-content-products" alt="">
 		                </div>
 		                <div class="col-md-7">
-		                    <h2 class="font-bold m-b-xs">
+		                    <h2 class="font-bold m-b-xs text-center">
 		                        Protección contra rayos eléctricos
 		                    </h2>
-		                    <hr>
+		                    <hr class="hrProduct">
 		                    <div>
 		                    	<h1 class="product-main-price">Precio por diseño</h1>
 		                    	<h5 class="text-muted">ese precio se da dependiendo del diseño de la zona que se desee proteger</h5> 
 		                    </div>
-		                    <hr>
+		                    <hr class="hrProduct">
 		                    <h4 class="mt-4">Descripcion</h4>
 		                    <div class="container">
 		                    	<p>
-				                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				                    La bobina en corto circuito flotante ES UN HUECO NEGRO ELECTRICO que elimina las cargas electricas de la tierra dentro de la semi esfera de proteccion y elimina el lider ascendente dentro de la semi esfera de proteccion.
+				                    El lider descendente de la nube busca un lider ascendete fuera de la zona de proteccion.
 		                    	</p>
 		                    </div>
 		                    <div class="text-right mt-5">
@@ -125,64 +147,22 @@
 				<div class="card-body">
 		            <div class="row">
 		                <div class="col-md-5 text-cente d-flex align-items-center justify-content-center">
-		                	<h3 class="text-muted">Imagen no disponible</h3>
+		                	<h3 class="text-muted" id="notImageProduct">Imagen no disponible</h3>
 		                </div>
 		                <div class="col-md-7">
-		                    <h2 class="font-bold m-b-xs">
-		                        Generación eléctrica limpia
+		                    <h2 class="font-bold m-b-xs text-center">
+		                        Prototipo <br>Generador Electrico Limpio
 		                    </h2>
-		                    <hr>
+		                    <hr class="hrProduct">
 		                    <div>
 		                    	<h1 class="product-main-price">Precio por diseño</h1>
 		                    	<h5 class="text-muted">ese precio se da dependiendo del diseño de la zona que se desee proteger</h5> 
 		                    </div>
-		                    <hr>
+		                    <hr class="hrProduct">
 		                    <h4 class="mt-4">Descripcion</h4>
 		                    <div class="container">
 		                    	<p>
-				                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		                    	</p>
-		                    </div>
-		                    <div class="text-right mt-5">
-		                        <div class="btn-group">
-		                            <a href="contactenos.html"><button class="btn btn-white btn-sm"><i class="fa fa-envelope"></i> Contactenos</button></a>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-				</div>
-			</div>
-			<br>
-			<div class="card card-productos">
-				<div class="card-body">
-		            <div class="row">
-		                <div class="col-md-5 text-center d-flex align-items-center justify-content-center">
-		                	<h3 class="text-muted">Imagen no disponible</h3>
-		                </div>
-		                <div class="col-md-7">
-		                    <h2 class="font-bold m-b-xs">
-		                        producto 1
-		                    </h2>
-		                    <hr>
-		                    <div>
-		                    	<h1 class="product-main-price">Precio por diseño</h1>
-		                    	<h5 class="text-muted">ese precio se da dependiendo del diseño de la zona que se desee proteger</h5> 
-		                    </div>
-		                    <hr>
-		                    <h4 class="mt-4">Descripcion</h4>
-		                    <div class="container">
-		                    	<p>
-				                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				                    El equipo electrico que genera energia electrica limpia se basa en una bobina en corto circuito que almacena las cargas electricas de la tierra y que cuando entra en la bobina en corto circutio flotante esas cargas electricas en movimiento crean una corriente electrica variable y esta corriente electrica variable crea un campo electrico variable el cual crea en el nucleo magnetico un flujo magnetico variable y por las ley de LENT'Z hay tension en una bobina secundaria.
 		                    	</p>
 		                    </div>
 		                    <div class="text-right mt-5">
@@ -200,28 +180,24 @@
 	<section id="listaImag">
 		<h1 class="text-center m-5">Implementacion<span class="text-muted" style="font-size: 17px;">(Toca la imagen)</span></h1>
 		<div class="container">
-			<div class="row mb-3">
-				<div class="col-md-6">
+			<div class="row mb-3 containerImageChangeChill">
+				<div class="col-lg-6 col-md-4 col-sm-3 mb-3">
 						<img src="img/diseño1-1.jpg" class="dise1" alt="">
 						<img src="img/diseño1-2.png" class="dise2" alt="">
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6 col-md-4 col-sm-3 mb-3">
 					<img src="img/diseño5-1.jpg" class="dise1" alt="">
 					<img src="img/diseño2-2.png" class="dise2" alt="">
 				</div>
-			</div>
-			<div class="row mb-3">
-				<div class="col-md-6">
+				<div class="col-lg-6 col-md-4 col-sm-3 mb-3">
 						<img src="img/diseño3-1.jpg" class="dise1" alt="">
 						<img src="img/diseño3-2.png" class="dise2" alt="">
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6 col-md-4 col-sm-3 mb-3">
 					<img src="img/diseño4-1.jpg" class="dise1" alt="">
 					<img src="img/diseño4-2.png" class="dise2" alt="">
 				</div>
-			</div>
-			<div class="row mb-3">
-				<div class="col-md-6">
+				<div class="col-lg-6 col-md-4 col-sm-3 mb-3">
 					<img src="img/diseño2-1.jpg" class="dise1" alt="">
 					<img src="img/diseño5-2.png" class="dise2" alt="">
 				</div>
@@ -233,17 +209,20 @@
 		<div class="d-flex flex-column justify-content-center">
 			<div class="d-flex justify-content-center margin-top-container-center mt-5">
 				<div class="container-text-center">
-					<h2 class="text-center">La Superintendencia de industria y comercio otorgó una patente de invención expedida con el número 5498 con una vigencia de 20 años (2012-2032).</h2>
+					<h2 class="text-center textPatent">La Superintendencia de industria y comercio otorgó una patente de invención expedida con el número 5498 con una vigencia de 20 años (2012-2032).</h2>
 				</div>
 			</div>
 		</div>
-		<div class="d-flex flex-column justify-content-center">
-			<div class="d-flex ">
-				<div class="col-md-6 d-flex justify-content-center">
+		<div class="d-flex flex-column justify-content-center container">
+			<div class="row ">
+				<div class="col-md-4 col-sm-12 d-flex justify-content-center">
 					<img src="img/registro1.jpg" class="img-registro" alt="alguna imagen" id="img1">
 				</div>
-				<div class="col-md-6 d-flex justify-content-center">
+				<div class="col-md-4 col-sm-12 d-flex justify-content-center">
 					<img src="img/registro2.png" class="img-registro" alt="alguna imagen" id="img1">
+				</div>
+				<div class="col-md-4 col-sm-12 d-flex justify-content-center">
+					<img src="img/registroMarca.png" class="img-registro" alt="alguna imagen" id="img1">
 				</div>
 			</div>
 			<hr class="margin-top-container-center">
@@ -251,34 +230,47 @@
 	</section>
 	<footer>
 		<div class="container">
-			<div class="row">
-				<div class="d-flex container-footer">
-					<div class="col-md-4">
-						<h5 class="title-footer">NOSTROS</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="col-md-4">
-						<h5 class="title-footer">MISION</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="col-md-4">
-						<h5 class="title-footer">ALGO</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
+			<div class="row pt-5">
+				<div class="col-md-4 col-sm-12 dataFooter">
+					<h5 class="title-footer">NOSOTROS</h5>
+					<p>Somos ingenieros electricistas especializados en proteccion contra rayos electricos y corto circuitos y generacion electrica limpia</p>
+				</div>
+				<div class="col-md-4 col-sm-12 dataFooter">
+					<h5 class="title-footer">MISION</h5>
+					<p>Proteccion al 100% para seres humanos y equipos con un procedimiento completamente nuevo a nivel mundial</p>
+				</div>
+				<div class="col-md-4 col-sm-12 dataFooter">
+					<h5 class="title-footer">VISION</h5>
+					<p>Ser la mejor empresa de alta tension del mundo</p>
 				</div>
 			</div>
 		</div>
 		<hr style="background-color: #353535">
 		<div class="container d-flex justify-content-md-between mt-4">
 			<p><strong>© 2019 ALL RIGHTS RESERVED</strong></p>	
-			<p><strong>redes....</strong></p>	
 		</div>
 	</footer>
+	<script src="js/src/jquery-2.1.0.min.js"></script>
+	<script>
+		$(function() {
+			var hidden = true
+			$('#navBurger').click( () => {
+				if(!hidden){
+					$('#navToggle').css('left', '-1000px')
+					$('#navBurger').css('left', '20px')
+					hidden = !hidden
+				}else{
+					$('#navToggle').css('left', '0')
+					$('#navBurger').css('left', '320px')
+					hidden = !hidden
+				}
+			})
+			$('#closeNavToggle').click( () => {
+				$('#navToggle').css('left', '-1000px')
+				$('#navBurger').css('left', '20px')
+				hidden = !hidden
+			})
+		});
+	</script>
 </body>
 </html>
